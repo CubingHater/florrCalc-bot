@@ -6,7 +6,6 @@ import asyncio
 import os   
 from discord import app_commands
 
-TOKEN = "MTQxNDU4NTExMjk0NjkzMzgzMg.GBjQLR.4KU5QOqnV8GaTbGTV59cNifJgy6uwkYZ1N2UFA"
 GUILD_ID = [1360136587723145307] 
 COMMAND_FILE = "bot_command.txt"
 
@@ -332,5 +331,6 @@ async def sync_command(ctx: commands.Context):
     except Exception as e:
         await ctx.send(f"Failed to sync slash commands: {e}")
         print(f"Error syncing commands: {e}")
+
 
 bot.run(TOKEN)
